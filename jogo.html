@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/cerebro.png" type="image/x-icon">
+    <title>Jogo da Memoria</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <div id="logo">
+        <img id="ft_logo" src="./img/cerebro.png" alt="logo">
+        <h2 id="nome_logo">Jogo da memória</h2>
+    </div>
+    <div id="bemvindo">
+         <span>Tempo: <span class="timer">00:00</span></span>
+       </div>
+</header>
+
+<div id="vitoria">
+    <div id="container">
+        <img id="ft_trofeu" src="img/trofeu-removebg-preview.png" alt="Trofeu">
+      <h1>Parabéns <span id="nome1">0</span>!</h1>
+      <p>Você encontrou todos os pares com</p>
+      <h2><span id="movimentosvitoria">0</span> ERROS</h2>
+      <h2>Tempo: <span id="tempo1">0</span></h2>
+      <a id="btn" href="index.html">Jogar de novo</a>
+    </div>
+  </div>
+
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+
+<section class="opcoes">
+    <button onclick="Disney()"> Disney</button>
+    <button onclick="CN()">Cartoon Network</button>
+    <button onclick="Vingadores()">Vingadores</button>
+</section>
+
+
+    <section class="jogo">
+
+        <section id="sec">
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="1" class="card__face card__face--back"></div>
+            </div>
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="2" class="card__face card__face--back"></div>
+            </div>
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="3" class="card__face card__face--back"></div>
+            </div>
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="4" class="card__face card__face--back"></div>
+            </div>
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="5" class="card__face card__face--back"></div>
+            </div>
+
+
+
+
+        </section>
+
+        <section id="sec">
+
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="6" class="card__face card__face--back"></div>
+            </div>
+
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="7" class="card__face card__face--back"></div>
+            </div>
+
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="8" class="card__face card__face--back"></div>
+            </div>
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="9" class="card__face card__face--back"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="10" class="card__face card__face--back"></div>
+            </div>
+
+        </section>
+
+        <section id="sec">
+
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="11" class="card__face card__face--back"></div>
+            </div>
+
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="12" class="card__face card__face--back"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="13" class="card__face card__face--back"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="14" class="card__face card__face--back"></div>
+            </div>
+
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="15" class="card__face card__face--back"></div>
+            </div>
+
+        </section>
+
+        <section id="sec">
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="16" class="card__face card__face--back"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="17" class="card__face card__face--back"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="18" class="card__face card__face--back"></div>
+            </div>
+
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="19" class="card__face card__face--back"></div>
+            </div>
+
+
+            <div class="card">
+                <div class="card__face card__face--front"></div>
+                <div id="20" class="card__face card__face--back"></div>
+            </div>
+        </section>
+    </section>
+<div class="resetar">
+<button onclick="resetarjogo()" class="resetar">reset</button>
+</div>
+</body>
+<script src="code.js"></script>
+
+<script src="virarcarta.js"></script>
+
+</html>

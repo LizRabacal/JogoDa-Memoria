@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#ft_logo {
+    max-width: 15% ;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.login__input {
+    text-align: center;
+}
+
+#logo {
+    margin-right: 8% !important;
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+#bemvindo {
+    width: 30%;
+    display: flex;
+    margin-left: 2% !important;
+    font-size: 22px;
+}
+
+header {
+    background-color: white;
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nome_logo {
+    margin-left: 2% !important;
+    padding-bottom: 0;
+    color: black;
+}
+
+span {
+    color: black;
+    font-size: medium;
+}
+
+#logoCN {
+    width: 30%;
+    height: 45%;
+    margin-left: 2%;
+}
+
+.sec1{
+    border: 6px solid linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-color: #47A8FD;
+    border-radius: 60px 60px 0px 0px;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    width: 80vh;
+    box-shadow: 2px 2px 2px 2px #505050;
+}
+
+#ftstema{
+    width: 95%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#fts2tema{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec11{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 3%;
+}
+
+#ftD{
+    width: 35%;
+}
+
+#login{
+    width: 75%;
+    height: 40vh;
+}
+
+#inpnome{
+    width: 100%;
+    height: 20%;
+    margin-top: 6%;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 17px;
+}
+
+#nivel{
+    width: 100%;
+    height: 20%;
+    margin-top: 3%;
+    padding-left: 10%;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 15px;
+}
+
+#envio{
+    width: 100%;
+    height: 20%;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #00b5cc;
+    background-color: #7ED957;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#envio:hover{
+    background-color: #ffb3b3;
+    border: 3px solid #00b5cc;
+}
+#envio a{
+    color: white;
+    cursor: pointer;
+}
+
+#ftA{
+    width: 20%;
+}
+
+
+
+
+@media screen and (max-width: 1500px) {
+
+    .sec1{
+        background-color: #47A8FD;
+        border-radius: 60px 60px 60px 60px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        width: 40vh;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        border: none;
+        font-family: 'Press Start 2P', cursive;
+    }
+    
+    #ft_logo {
+        max-width: 6vh;
+    }
+    
+    a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .login__input {
+        text-align: center;
+    }
+    
+    #logo {
+        margin-right: 8% !important;
+        margin-left: 8%;
+        display: flex;
+        align-items: center;
+        width: 70%;
+    }
+    
+    #bemvindo {
+        width: 30%;
+        display: flex;
+        margin-left: 2% !important;
+        font-size: 22px;
+    }
+    
+    header {
+        background-color: white;
+        height: 8rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #nome_logo {
+        margin-left: 2% !important;
+        padding-bottom: 0;
+        color: black;
+        font-size: 15px;
+    }
+    
+    span {
+        color: black;
+        font-size: medium;
+    }
+    
+    #logoCN {
+        width: 30%;
+        height: 45%;
+        margin-left: 2%;
+    }
+    
+    
+    #ftstema{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6vh;
+
+    }
+    
+    #fts2tema{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .login-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sec11{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin-top: 35%;
+        height: 30%;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    #ftD{
+        width: 35%;
+    }
+    
+    #login{
+        width: 75%;
+        height: 40vh;
+    }
+    
+    #inpnome{
+        width: 100%;
+        height: 10%;
+        margin-top: 6%;
+        text-align: center;
+        border-radius: 8px;
+        border: 2px solid black;
+        font-size: 17px;
+    
+    }
+    
+    #nivel{
+        width: 100%;
+        height: 20%;
+        margin-top: 3%;
+        padding-left: 10%;
+        border-radius: 8px;
+        border: 2px solid black;
+        font-size: 15px;
+    }
+    
+    #envio{
+        width: 100%;
+        height: 20%;
+        margin-top: 5%;
+        text-align: center;
+        border-radius: 8px;
+        border: 2px solid #00b5cc;
+        background-color: #7ED957;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    
+    #envio:hover{
+        background-color: #ffb3b3;
+        border: 3px solid #00b5cc;
+    }
+    #envio a{
+        color: white;
+        cursor: pointer;
+    }
+    
+    #ftA{
+        width: 20%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+
+    
+}

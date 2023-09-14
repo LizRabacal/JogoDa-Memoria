@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="img/cerebro.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+
+<body>
+    <form class="login-form">
+
+        <header>
+            <div id="logo">
+                <img id="ft_logo" src="img/cerebro.png" alt="logo">
+                <h2 id="nome_logo">Jogo da memória</h2>
+            </div>
+            <div id="bemvindo">
+                <span>Bem-vindo!</span>
+            </div>
+        </header>
+        <section class="sec1">
+            <section id="ftstema">
+                <img id="logoCN" src="img/CARTOON_NETWORK_logo.png" alt="Logo Cartoon Network">
+                <div id="fts2tema">
+                    <img id="ftD" src="img/logoD-removebg-preview.png" alt="Logo Disney Princess">
+                    <img id="ftA" src="img/logoA-removebg-preview.png" alt="Logo Avengers">
+                </div>
+            </section>
+            <section class="sec11">
+                <section id="login">
+                    <input id="inpnome" type="text" placeholder="Nome">
+                    <button id="envio" type="submit" ><a href="jogo.html">ENTRAR</a></button>
+                </section>
+            </section>
+        </section>
+    </form>
+</body>
+<script>
+    var btn = document.querySelector("#envio");
+
+    btn.addEventListener("click", function () {
+        var text = document.querySelector("#inpnome").value;
+        localStorage.setItem('nome', text);
+    })
+</script>
+<script src="code.js"></script>
+</html>

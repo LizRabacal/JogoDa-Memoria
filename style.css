@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200&family=Roboto+Condensed:wght@300&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#ft_logo {
+    max-width: 10vh;
+}
+
+#logo {
+    margin-right: 8% !important;
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+
+#bemvindo {
+    width: 20%;
+    display: flex;
+    margin-left: 2% !important;
+    font-size: 26px;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+}
+
+#nome_logo {
+    margin-left: 2% !important;
+    padding-bottom: 0;
+    width: 55%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header {
+    background-color: rgb(234, 243, 254);
+    height: 7rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 8px 8px 8px #505050;
+
+}
+
+body {
+    background-image: url('./img/pixelgif.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive !important;
+}
+
+button {
+    border-color: transparent;
+    font-family: 'VT323', monospace;
+    font-size: larger;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+
+h6 {
+    font-family: 'VT323', monospace;
+    font-size: larger;
+}
+
+.resetar {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.jogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+    margin-top: 0;
+}
+
+
+#sec {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 23vh;
+    margin-top: 3%;
+}
+
+
+#back {
+    background-image: url('img/preto.jpg');
+}
+
+.card {
+
+    perspective: 1000px;
+    position: relative;
+
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #fff;
+    border: 1px solid rgba(3, 0, 128, 0.3);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    transition: transform .5s;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    margin-top: 2%;
+}
+
+
+.card {
+    position: relative;
+    width: 20vh;
+    height: 24vh;
+    margin: 2vh;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 0.25s;
+    border: 1vh solid rgba(3, 0, 128, 0.3);
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.6),
+        2px 1px 4px rgba(0, 0, 0, 0.3),
+        2px 4px 3px rgba(3, 0, 128, 0.3),
+        0 0 7px 2px rgba(0, 208, 255, 0.6),
+        inset 0 1px 2px rgba(0, 0, 0, 0.6),
+        inset 2px 1px 4px rgba(0, 0, 0, 0.3),
+        inset 2px 4px 3px rgba(3, 0, 128, 0.3),
+        inset 0 0 7px 2px rgba(0, 208, 255, 0.6);
+
+
+}
+
+
+.card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+}
+
+.card__face--front {
+    background: url("./img/gifcartoon2.gif");
+    background-size: cover;
+}
+
+.card__face--back {
+    transform: rotateY(180deg);
+}
+
+.card>div:last-of-type {
+    background-color: white;
+    background-size: cover;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+button:active {
+    color: #000
+}
+
+button:active:after {
+    background: transparent;
+}
+
+button:hover:before {
+    opacity: 1;
+}
+
+button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#vitoria {
+    position: fixed;
+    text-align: center;
+    color: rgb(0, 71, 165);
+    font-family: 'Press Start 2P', cursive;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    display: none;
+}
+
+#vitoria h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0.2em;
+}
+
+#vitoria h2 {
+    margin: 0.5em;
+}
+
+#vitoria a {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 3px solid rgb(50, 50, 50);
+    bottom: calc(20vh + 50px);
+    left: calc(50% - 72px);
+    width: fit-content;
+    font-size: small;
+}
+
+#vitoria a:hover {
+    background-color: rgb(50, 50, 50);
+    color: lightblue;
+}
+
+#vitoria p {
+    color: rgb(50, 50, 50);
+}
+
+#vitoria #container {
+    background: lightblue;
+    padding: 50px;
+    width: 80%;
+    height: 60vh;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ft_trofeu{
+    width: 15%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+
+
+    #vitoria #container {
+        padding: 40px;
+      
+    }
+    header{
+        height: 10vh;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    #ft_logo {
+        max-width: 10vh ;
+    }
+
+    #nome_logo{
+        font-size: 18px;
+    }
+
+    #bemvindo{
+        margin-right: 1%;
+    }
+
+    #logo{
+        width: 55%;
+    }
+  
+
+    #bemvindo span{
+        font-size: 18px;
+    }
+    #container{
+        width: 50%;
+        margin-left: 2%;
+    }
+    #ft_trofeu {
+        width: 35%;
+    }
+
+    #vitoria h1 {
+        font-size: 2em;
+    }
+    #vitoria p {
+        font-size: small;
+    }
+    #vitoria h2 {
+        font-size: 16px;
+    }
+
+    #vitoria span{
+        font-size: 16px;
+    }
+
+    #vitoria a{
+        width: 50%;
+        height: 2%;
+        font-size: 11px;
+    }
+
+    html{
+        height: 100%;
+    }
+    body{
+        height: 100%;
+    }
+    .opcoes {
+        
+        margin-top: 20px;
+    }
+    .card{
+        width: 10vh;
+        height: 13vh;
+        border: 0.25vh solid rgba(3, 0, 128, 0.3);
+        margin: 1vh;
+    }
+    #sec{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin-top: 3%;
+      
+    }
+    button{
+        width: 14vh;
+        height: 6vh;
+        font-size: 15px;
+     
+        padding: 1px;
+
+    }
+
+    .resetar{
+     margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+
+    #vitoria #container {
+        padding: 50px;
+        width: 50%;
+        height: 30vh;
+        font-size: 10px;
+    }
+
+    header{
+        height: 10vh;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+    #ft_logo {
+        max-width: 8vh ;
+    }
+
+    #nome_logo{
+        font-size: 10px;
+    }
+
+    #bemvindo{
+        margin-right: 1%;
+    }
+
+    #logo{
+        width: 55%;
+    }
+  
+
+    #bemvindo span{
+        font-size: 10px;
+    }
+    #container{
+        width: 58%;
+        margin-left: 2%;
+    }
+
+
+    #ft_trofeu {
+        width: 35%;
+    }
+    #vitoria h1 {
+        font-size: 2em;
+    }
+    #vitoria p {
+        font-size: small;
+    }
+    #vitoria h2 {
+        font-size: 16px;
+    }
+
+    #vitoria span{
+        font-size: 16px;
+    }
+
+    #vitoria a{
+        width: 50%;
+        height: 6%;
+        font-size: 10px;
+    }
+
+    html{
+        height: 100%;
+    }
+    .opcoes {
+        
+        margin: 0;
+    }
+    .card{
+        width: 7vh;
+        height: 8vh;
+        border: 0.25vh solid rgba(3, 0, 128, 0.3);
+        margin: 1vh;
+    }
+    #sec{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin-top: 3%;
+      
+    }
+    button{
+        width: 8vh;
+        height: 4vh;
+        font-size: 10px;
+        margin-bottom: 4vh;
+        margin-top: 4vh;
+        padding: 1px;
+
+    }
+
+    .resetar{
+        margin-top: 5%;
+    }
+}
